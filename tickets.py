@@ -20,7 +20,9 @@ from docopt import docopt
 def cli():
     """ command-line interface """
     arguments = docopt(__doc__)
+    from_station = arguments.get('<from>')
     print(arguments)
+    print(from_station)
 
 if __name__ == "__main__":
     cli()
